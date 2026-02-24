@@ -14,6 +14,7 @@ body {
     background-attachment: fixed;
     height: 100vh;
     overflow: hidden;
+    background-color: #ECE7DF;
 }
 
 header {
@@ -21,7 +22,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 16px 48px;
-    background: rgba(255, 255, 255, 0.6);
+    background-color: #ECE7DF;
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(0, 0, 0, 0.06);
     position: relative;
@@ -163,4 +164,17 @@ button:hover {
 
 button:active {
     transform: scale(0.98);
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position: left center;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 60px;
+    }
 }
